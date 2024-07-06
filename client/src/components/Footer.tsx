@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 function Footer() {
@@ -57,18 +58,18 @@ function Footer() {
               />
             </svg>
           </div>
-          <a className="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">
-            About
-          </a>
-          <a className="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">
-            Services
-          </a>
-          <a className="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">
+          <Link className="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase" href={"/feature"}>
+            Feature 
+          </Link>
+          <Link className="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase" href={"/resourcepage"}>
+            Resources
+          </Link>
+          <Link className="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase" href={"/"} >
             Why us
-          </a>
-          <a className="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">
+          </Link>
+          <Link className="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase" href={"/contact"}>
             Contact
-          </a>
+          </Link>
           <div className="flex flex-row space-x-8 items-center justify-between">
             <a>
               <svg
